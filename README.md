@@ -6,3 +6,13 @@ Converts numbers to text in Spanish.
 
 Basado en el trabajo de AxiaCore S.A.S.  
 [https://github.com/AxiaCore/numero-a-letras/tree/master/php](https://github.com/AxiaCore/numero-a-letras/tree/master/php)
+
+**Ejemplo de Uso**
+```php
+$number = -123;
+$numbersToSpanish = new NumbersToSpanish();
+$field = $numbersToSpanish->getText($number);
+
+echo $field['number'].' '.$field['text'];
+// Output: -123 MENOS CIENTO VENTITRES
+```    
